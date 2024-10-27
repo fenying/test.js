@@ -1,0 +1,9 @@
+.ottoia
+node_modules/
+tsconfig.tsbuildinfo
+*.js
+*.js.map
+*.d.ts
+*.ts.map
+!commitlint.config.js
+!eslint.config.js

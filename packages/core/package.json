@@ -1,0 +1,39 @@
+{
+  "name": "@litert/test",
+  "version": "0.1.0",
+  "main": "./lib/index.js",
+  "description": "The test kits for LiteRT packages on Node.js",
+  "scripts": {
+    "ottoia:clean": "rm -rf lib app tsconfig.tsbuildinfo",
+    "prepublishOnly": "echo \"Please use ottoia publishing this package!\"; exit 1;"
+  },
+  "author": "Angus.Fenying <fenying@litert.org> (https://fenying.net)",
+  "license": "Apache-2.0",
+  "keywords": [
+    "litert",
+    "lrt",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litert/test.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litert/test.js/issues"
+  },
+  "homepage": "https://github.com/litert/test.js#readme",
+  "types": "./lib/index.d.ts",
+  "typings": "./lib/index.d.ts",
+  "private": false,
+  "dependencies": {
+    "@litert/decorator": "-",
+    "@litert/reflect": "-"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "ottoia:alias": "core",
+  "access": "public",
+  "engines": {
+    "node": ">=20.13.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@litert/test-example",
+  "version": "0.1.0",
+  "main": "index.js",
+  "description": "",
+  "scripts": {
+    "ottoia:prepublish": "",
+    "ottoia:postpublish": "",
+    "ottoia:clean": "rm -rf lib app tsconfig.tsbuildinfo",
+    "prepublishOnly": "echo \"Please use ottoia publishing this package!\"; exit 1;"
+  },
+  "private": true,
+  "dependencies": {
+    "@litert/test": "-"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "access": "public"
+}

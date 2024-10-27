@@ -1,0 +1,40 @@
+{
+  "name": "@litert/test-kits",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build packages/*",
+    "build-watch": "tsc --build -w packages/*",
+    "clean": "ottoia clean",
+    "rebuild": "npm run clean && npm run build",
+    "lint": "./utils/eslint.sh",
+    "test": "./cli packages/core packages/example",
+    "ottoia:prepublish": "npm run rebuild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@litert/eslint-plugin-rules": "^0.2.0",
+    "@litert/ottoia": "^0.4.3",
+    "@types/node": "^22.8.1",
+    "husky": "^9.1.6",
+    "typescript": "^5.6.3"
+  },
+  "ottoia": {
+    "releases": {
+      "stable": {
+        "tag": "latest"
+      }
+    }
+  },
+  "private": true,
+  "dependencies": {
+    "@litert/clap": "^3.0.0",
+    "@litert/decorator": "^0.2.2",
+    "@litert/reflect": "^1.0.0"
+  }
+}
