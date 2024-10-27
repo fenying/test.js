@@ -1,14 +1,14 @@
 {
   "name": "@litert/test-cli",
   "version": "0.1.0",
-  "main": "./app/CLI.js",
+  "main": "./app/index.js",
   "description": "The executable of test kits for LiteRT packages on Node.js",
   "scripts": {
     "ottoia:clean": "rm -rf lib app tsconfig.tsbuildinfo",
     "prepublishOnly": "echo \"Please use ottoia publishing this package!\"; exit 1;"
   },
   "bin": {
-    "li-test": "./app/CLI.js"
+    "li-test": "./app/index.js"
   },
   "author": "Angus.Fenying <fenying@litert.org> (https://fenying.net)",
   "license": "Apache-2.0",
