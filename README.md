@@ -17,7 +17,7 @@ A simple test kits for LiteRT packages, based on Node.js.
 ## Installation
 
 ```sh
-npm i @litert/test --save
+npm i @litert/test-cli --save
 ```
 
 ## Usage
